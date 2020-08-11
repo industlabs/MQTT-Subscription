@@ -19,9 +19,9 @@ function startConnect() {
             useSSL: useTLS,
             cleanSession: cleansession,
             onSuccess: onConnect,
-            onFailure: function (message) {
-                $('#status').val("Connection failed: " + message.errorMessage + "Retrying");
-                setTimeout(MQTTconnect, reconnectTimeout);
+            //onFailure: function (message) {
+           //     $('#status').val("Connection failed: " + message.errorMessage + "Retrying");
+           //     setTimeout(MQTTconnect, reconnectTimeout);
             }
         };
     
